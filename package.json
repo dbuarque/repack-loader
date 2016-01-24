@@ -1,6 +1,6 @@
 {
   "name": "repack-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Repack loader cli",
   "homepage": "https://github.com/dbuarque/repack-loader",
   "main": "dist/index.js",
