@@ -1,11 +1,19 @@
 language: node_js
 node_js:
-  - "4.2.0"
-  - "4.2.3"
-  - "4.2.4"
-  - "4.2.5"
-  - "4.2.6"
+- 4.2.0
+- 4.2.3
+- 4.2.4
+- 4.2.5
+- 4.2.6
 sudo: false
 branches:
   only:
-    - master
+  - master
+deploy:
+  provider: npm
+  email: diogenes.buarque@gmail.com
+  api_key:
+    secure: kKBp68yYY+VLryoYNT/Kntaoh+9aMuKJPuoA5SSx3WIm3xjllbaS1Zhs9kAH2gzybiT+m6R+zPJzkdfr9wseWV9FljUMG1Z5GpnYfXplPgYo0uewm3H//2+YXnH9ZsPeCHz3FgDisSzp95n5fFCR1rFljhTpe2alLu/qK1Qs1P++SaU7yKhGPEjtMngiExs1ulk/W94w2sIBcOe6LFy0wtJnpLrlPDYpaKYJNEJ8qtkRaI1X7YjI350I0pdKeM8Z5jjcMGfPoza6f25TQXhBhQqEkLI4MjSTjlnefd2hzLqLeEMzNJz4625lIqDAIBGrrBUFLixgXUge2z0SnkWse7NKD73ZCQuHpYXnMCa98Ler9NRy/HC4agO2AJ1Y6H42Dbg0FIAXOSsGbljMlC7XAPf1nZDlVqwLc1hto3BkxcFwVXCTjI+u2/zpNiiRZOa22z2kkjD1gixdTqfOoD8RJ9Rt/7Th1w5+hEbM3aSX5y9Dv6JdIi3m+EA6a0n9gzZjpfDV34GHPgTf2CJ1rrFIJ0vJbuQOGuXBaUtgijWfAb1v4/q2ZHbtaO2bwdDKucV+oXDu5/t8PV4Zrau18TfjhycpvaKcjhakLa/0PA1bhzJY/VxrN1QhD89lC3H5Ttgt05rAc+XbbMqG/Yd/mOvt46VSCMWmasgOCqO1k8Nfztg=
+  on:
+    tags: true
+    repo: dbuarque/repack-loader
